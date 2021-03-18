@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment form 2</title>
+</head>
+
+<body>
+    <div class="whole">
+    <form action="">
+
+        <fieldset class="head" id="head">        
+        <h1>Payment Form</h1>
+        <h5>Enter the details to pay the bill</h5>
+        </fieldset>
+        <hr>
+        
+        <p>Name*</p>
+        <input type="text" name="firstname" placeholder="Firstname" id="firstname" required> <input type="text" name="Surname" placeholder="Surname" id="surname" required>
+        <p>Address*</p>
+        <input type="text" name="Street_address" placeholder="Street Address" id="Street" required>
+        <br>
+        <input type="text" name="SA_line2" placeholder="Street Address line 2" id="SA_line2" required>
+        <br>
+        <input type="text" name="city" placeholder="City" id="city" required> <input type="text" name="state" placeholder="State" id="state" required>
+        <br>
+        <input type="text" name="zipcode" placeholder="Postal/Zip code" id="zipcode" required>
+        <br>
+        <p>Email</p>
+        <input type="email" name="email" placeholder="abc@gmail.com" id="email">
+        <br>
+        <p>Date*</p>
+        <input type="date" name="date" id="date" required>
+        <br>
+        <p>Payment Method*</p>
+        <div class="payment">
+            <fieldset class="method">
+        
+        <p><input type="radio" name="Payment" id="" required> Card</p>
+        <p><input type="radio" name="Payment" id="" required>Check</p>
+        <p><input type="radio" name="Payment" id="" required>Cash</p>
+    </fieldset>
+    </div>
+        <br>
+        <p>If Card option is selected*</p>
+        <br>
+        <p>Card Number <input type="text" name="cardno" placeholder="1111-2222-3333-4444" id="cardno" ></p>
+        <p>Expiry Date <input type="date" name="expdate" id="expdate"></p>
+        <p>CVV <input type="number" name="cvv" placeholder="123" id="cvv" ></p>
+        <input type="submit" value="Submit">
+
+
+    </form>
+</div>
+</body>
+</html>
